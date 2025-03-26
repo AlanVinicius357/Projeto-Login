@@ -6,27 +6,38 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     
 </head>
 <body>
     
-    <main>
-        <section id="login">
-            <div id="imagem">
-              
-            </div>
+<main>
+    <section id="login">
+        <div id="imagem">
+              <!--aqui a imagem vai no css-->
+        </div>
             
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.php" method="post">
-                    <label for="iemail">Email:
-                        <input type="email" name="email" id="iemail">
-                    </label>
-                    <br>
-                    <label for="isenha">Senha:
-                        <input type="password" name="senha" id="isenha">
-                    </label>
+        <div id="formulario">
+            <h1>Login</h1>
+            <p>Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="campo">
+                    <span class="material-symbols-outlined">
+                        person
+                        </span>
+                    <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="Email" maxlength="30">
+                    <label for="iemail">Login</label>
+                </div>
+
+                <div class="campo">
+                    <span class="material-symbols-outlined">key</span>
+
+                    <input type="password" name="senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" minlength="8" maxlength="12">
+                    <label for="isenha">Senha</label>
+                </div>
+                <input type="submit" value="Entrar">
+                <a href="esqueci.html">Esqueci a senha </a>
+                    <span class="material-symbols-outlined">Email</span>
                 </form>
             </div>
            

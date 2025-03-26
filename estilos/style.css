@@ -58,5 +58,13 @@ section#login > div#formulario {
     display: block;
 }
 
+#formulario > h1{
+    font-size: 2em;
+    text-align: center;
+}
+#formulario {
+    font-size: 0.8em;
+}
+
 
 
