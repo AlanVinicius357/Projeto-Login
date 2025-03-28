@@ -8,21 +8,27 @@
         background-image: linear-gradient(#b8136e,rgb(163, 28, 50) ,#701c1c);
     }
     section#login{
-        width: 80vw;
-        height: 350px;
+        width: 600px;
+        height: 320px;
+        
     }
-    section#login > div#imagem{
+    section#login > div#imagem {
         float: left;
-        width: 30%;
+        width: 50%;
         height: 100%;
+        
     }
-    section#login > div#formuario{
+    section#login > div#formulario{
         float: right;
-        width: 70%;
+        width: 50%;
+        
     }
-
-    
-
+    #formulario > h1{
+        font-size: 2em;
+    }
+    #formulario > p{
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width:992px)  {
